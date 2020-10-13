@@ -14,7 +14,7 @@ pipeline{
 		{
 			steps
 			{
-				docker build -t alshamari/alex-project:${BUILD_ID} ../
+				sh "docker build -t alshamari/alex-project:${BUILD_ID} ../"
 				
 			}
 		}
