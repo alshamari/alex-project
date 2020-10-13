@@ -8,8 +8,7 @@ pipeline{
 				cd my-app
 				/usr/local/bin/mvn clean
 	 			/usr/local/bin/mvn compile
-	 			/usr/local/bin/mvn package 
-			}
+	 			/usr/local/bin/mvn package }
 		}
 			stage('build docker image'){
 				steps
