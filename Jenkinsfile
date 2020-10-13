@@ -21,13 +21,14 @@ pipeline{
 				}
 		  	
          	}
-         	stage('deploy'){
+         	stage('deploy')
+         	{
          		steps
          		{
-         		cd terraform
-         		terraform init 
-         		terraform plan
-         		terraform apply -auto -approve
+         			cd terraform
+         			terraform init 
+         			terraform plan
+         			terraform apply -auto -approve
          		}
          	}
 	}
