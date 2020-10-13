@@ -10,6 +10,14 @@ pipeline{
 
 	 		}
 		}
+		stage('build with docker')
+		{
+			steps
+			{
+				docker build -t alshamari/alex-project:${BUILD_ID} ../
+				
+			}
+		}
 		
 	
 	}
