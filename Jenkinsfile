@@ -7,13 +7,13 @@ pipeline{
 			steps
 			{
 				cd my-app
-				/usr/local/bin/mvn clean
+				sh "/usr/local/bin/mvn clean"
 	 			/usr/local/bin/mvn compile
 	 			/usr/local/bin/mvn package 
 	 		}
 		}
-			stage('build docker image'){
-				steps
+		stage('build docker image'){
+			steps
 				{
 
 					/usr/local/bin/docker build -t alshamari/alexproject:{build_ID} ../
@@ -22,7 +22,7 @@ pipeline{
 				}
 		  	
          	}
-         	stage('deploy')
+         stage('deploy')
          	{
          		steps
          		{
