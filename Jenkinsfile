@@ -7,8 +7,8 @@ pipeline{
 			steps
 			{
 				sh "cd my-app"
-				sh "mvn clean"
-	 			sh "mvn compile"
+				sh "/usr/local/bin/mvn clean"
+	 			sh "/usr/local/bin/mvn compile"
 	 			sh "/usr/local/bin/mvn package" 
 	 		}
 		}
