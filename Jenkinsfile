@@ -23,7 +23,7 @@ pipeline{
 		{
 			steps
 			{
-				sh"cd terraform && /usr/local/bin/terraform init && /usr/local/bin/terraform plan && /usr/local/bin/terraform apply"
+				sh"cd terraform && /usr/local/bin/terraform init && /usr/local/bin/terraform plan && /usr/local/bin/terraform apply -auto -approve"
 			}
 
 		}
