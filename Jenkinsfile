@@ -15,7 +15,7 @@ pipeline{
 			steps
 			{
 				withCredentials([usernamePassword(credentialsId: '3202ab49-29b1-4376-a6b5-7cbbacb8b474', username: 'NUSER', passwordVariable: 'PASS')]){
-					sh "cd my-app && /usr/local/bin/docker build -t alshamari/alex-project:${BUILD_ID} ../ && /usr/local/bin/docker login "
+					sh "cd my-app && /usr/local/bin/docker build -t alshamari/alex-project:${BUILD_ID} ../ && /usr/local/bin/docker login "}
 			}
 		}
 	
