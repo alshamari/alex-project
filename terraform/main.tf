@@ -1,13 +1,13 @@
 provider "google" {
   project     = "peak-brook-290921"
-  region      = "us-central1"
+  region      = "us-east1"
 }
 
 
 resource "google_compute_instance" "default" {
   name         = "myapp"
   machine_type = "n1-standard-1"
-  zone         = "us-central1-a"
+  zone         = "us-east1-b"
 
   tags = ["http", "https"]
 
