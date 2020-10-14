@@ -1,11 +1,9 @@
 # Sample Java App
-
-
 ### MVN Build 
 The app uses maven for building its binaries
 
 ### Docker
-THe binary is packaged into a docker container
+THe binary is packag:wqed into a docker container
 
 ### Docker Hub
 The image is built and pushed to Dockerhub 

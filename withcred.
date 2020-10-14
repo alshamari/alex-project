@@ -1,0 +1,14 @@
+
+steps {
+    withCredentials([sshUserPrivateKey(credentialsId: mySshKey, keyFileVariable: KEY')]) {
+        sh "ssh -i ${KEY} 10.10.10.10 -C \'docker run -n my-nginx -p 8080:80 nginx\'"
+    }
+}
+
+
+
+
+steps {
+    withCredentials([usernamePassword(credentialsId: 'credUserName', usernameVariable: 'NUSER', passwordVariable: 'NPASS')]) {
+        sh './gradlew test -PNEXUS_USERNAME=${NUSER} -PNEXUS_PASSWORD=${NPASS}'
+    }
