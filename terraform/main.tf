@@ -1,5 +1,6 @@
+# project ID needs to be passed as a variable in Jenkins 
 provider "google" {
-  project     = "peak-brook-290921"
+  project     = var.project_id
   region      = "us-east1"
 }
 
