@@ -11,4 +11,4 @@ THe binary is packaged into a docker container
 The image is built and pushed to Dockerhub 
 
 ### Terraform
-terraform is used to build the VM with docker and run the container
+terraform is used to build the VM with docker and run the container also will build sql database
